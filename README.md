@@ -29,8 +29,17 @@ this information give me some information about the machine and after some looki
 
 Website: http://underpass.htb/daloradius/app/operators/login.php
 
+Login Information
 
+- administrator
+- radius
 
+# Hash Cracking 
+go to User List and you will find username and a hashed MD5 password, copy the MD5 password and go to this link:
+
+Website: https://crackstation.net/
+
+# User.txt
 
 
 # Root Flag
